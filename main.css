@@ -1,0 +1,299 @@
+body, ul{
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fc;
+   
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+    margin-left: 7%;
+}
+
+ .logo img{
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            margin-right: 10px;
+        }
+        
+.nav-links {
+    list-style: none;
+    display: flex;
+    
+}
+
+.nav-links li {
+   margin-right: 30px; /*  Add spacing between navigation links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0c0c0c; /* Link text color */
+    font-size: large;
+    font-weight: 499;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+.nav-links a:hover {
+    color: #7751f5;
+    font-weight: 700;
+
+     transition: 0.2s ease;
+}
+
+span.head{
+ 
+    max-width: 20%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4264fc;
+  
+}
+
+
+
+main{
+    display: flex;
+    float: left;
+    
+}
+
+.paragraph{
+    align-items: center;
+    margin: 2% 0% 0 5%;
+    font-weight: 500;
+    width: 55%;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.study{
+   font-family: 'Caveat', cursive;
+   font-weight: bolder;
+   font-size: 3.2rem;
+    background: linear-gradient(to right, #9210f5 0%, #f72580 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 100%;
+}
+.big{
+    margin-top: 0%;
+    font-size:  500%;
+    color: rgb(56, 56, 63);
+    
+}
+.small{
+    font-size: 110%;
+    margin-top: -8%;
+    max-width: 100%;
+    font-weight:600;
+    
+}
+
+
+
+.cube{
+    margin-top: 5%;
+    height: 100%;
+    width: 45%;
+ 
+}
+
+.btn-btn{
+   display: inline-flex;
+   gap: 2rem;
+   position: absolute;
+   left: 45%;
+   top: 80%;
+  
+   /* TODO:hamburger menu */
+
+  
+}
+
+/* TODO: BUTTON */
+.btn {
+  border: none;
+  width: 10em;
+  height: 3em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1C1A1C;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  text-decoration: none;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: small;
+}
+
+.class .btn:hover {
+  background: linear-gradient(0deg,#A47CF3,#683FEA);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px #9917FF;
+  transform: translateY(-2px);
+}
+.class1 .btn:hover {
+  background: linear-gradient(0deg,#f37c98,#f32361);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px #ff177f;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+} 
+
+
+
+.button-link{
+    text-decoration: none !important;
+}
+
+
+    /* MEDIA QUERIES */
+    /* CSS for small screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px 10px; /* Add some padding to the container */
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center;
+        font-size: small;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Add spacing between navigation links */
+    }
+
+    main {
+        display: block;
+        text-align: center;
+        justify-items: center;
+        margin-right: -50%;
+    }
+
+    .paragraph {
+        
+      font-size: 60%;
+      max-width: 60%;
+      width: 100%;
+      margin: 15px;
+     
+    }
+    .study{
+        font-size: 2.2rem;
+    }
+    .small{
+        max-width: 120%;
+        font-size: 170%;
+
+    }
+
+    .cube {
+        margin: -40%;
+        display: none;
+
+    }
+
+    .btn-btn{
+        margin-top: 12%;
+        position: static;
+        font-size: 50px;
+        position: relative;
+        left:12%;
+
+       
+    }
+
+
+    
+}
+
+/* CSS for medium to large screens */
+/* CSS for tablets and iPads (landscape and portrait) */
+
+
+/* Portrait orientation for tablets and iPads */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+
+
+    .nav-links {
+        margin-right: 10px;
+       
+    }
+
+    main {
+        /* Adjust main content styles for portrait orientation on tablets */
+         overflow-x: hidden;
+    }
+
+    .paragraph {
+       margin-left: 13%;
+       max-width: 100%;
+       font-size: 1.0rem;
+      
+    }
+    .big{
+        font-size: 400%;
+    }
+
+    .cube {
+       margin-left: -60%;
+       margin-bottom: -90%;
+       z-index: -100;
+       width: 90%;
+       height: 100%;
+    }
+    .small{
+        margin-top: -15%;
+    }
+
+    .btn-btn {
+        
+        margin-top: -40%;
+        margin-left: -10%;
+    }
+}
+
+
+/* TODO: NAVIGATION BAR ANIMATION */
