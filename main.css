@@ -3,6 +3,7 @@ body, ul{
     padding: 0;
     background-color: #f4f8fc;
    
+   
 }
 
 
@@ -33,6 +34,7 @@ nav{
     list-style: none;
     display: flex;
     
+    
 }
 
 .nav-links li {
@@ -42,8 +44,8 @@ nav{
 .nav-links a {
     text-decoration: none;
     color: #0c0c0c; /* Link text color */
-    font-size: large;
-    font-weight: 499;
+    font-size: 1.25rem;
+    font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
    
 }
@@ -98,7 +100,7 @@ main{
     
 }
 .small{
-    font-size: 110%;
+    font-size: 130%;
     margin-top: -8%;
     max-width: 100%;
     font-weight:600;
@@ -143,13 +145,13 @@ main{
 }
 
 .sparkle {
-  fill: #AAAAAA;
+  fill: #fbfafa;
   transition: all 800ms ease;
 }
 
 .text {
   font-weight: 600;
-  color: #AAAAAA;
+  color: #faf8f8;
   font-size: small;
 }
 
@@ -296,4 +298,5 @@ main{
 }
 
 
-/* TODO: NAVIGATION BAR ANIMATION */
+
+
