@@ -65,7 +65,7 @@ const getChatResponse = async (incomingChatDiv) =>{
     }
      catch(error){
         pElement.classList.add("error");
-        pElement.textContent = "Oops!! Something went wrong... Try again . ";
+        pElement.textContent = "We apologize for any inconvenience. Our application is currently undergoing an upgrade to enhance its features and performance. We appreciate your patience and assure you that the improved app will be available shortly. Thank you for your understanding and support.";
         //console.log(error);
     }
 
